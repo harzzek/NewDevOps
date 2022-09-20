@@ -1,26 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import {Button, Container, Grid, TextField} from "@mui/material";
+import {Routes, Route} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-          <button>Login</button>
-        </a>
-      </header>
+    <div>
+        <Routes>
+            <Route path="/about" element={<About/>}/>
+        </Routes>
     </div>
   );
 }
+
+ const About = () => {
+     return <div>
+         <h1>Hi</h1>
+     </div>
+ }
 
 export default App;
