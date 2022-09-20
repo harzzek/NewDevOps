@@ -5,7 +5,7 @@ import Login from './pages/Login';
 import Trials from './pages/Trials';
 import About from './pages/About';
 
-import {AppBar, Toolbar, Typography} from "@mui/material";
+import {AppBar, Button, Toolbar, Typography} from "@mui/material";
 
 function App() {
   return (
@@ -42,8 +42,14 @@ const Homepage = () => {
     <AppBar position="static">
         <Toolbar>
             <Typography variant="h4">
-                Navbar
+                <div>
+                    Home
+                </div>
             </Typography>
+            <Button color="inherit" href={"#/about"}>About</Button>
+            <Button color="inherit" href={"#/login"}>Login</Button>
+            <Button color="inherit" href={"#/settings"}>Settings</Button>
+            <Button color="inherit" href={"#/trials"}>Trials</Button>
         </Toolbar>
     </AppBar>
     )
