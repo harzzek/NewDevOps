@@ -4,6 +4,8 @@ import Settings from './pages/Settings';
 import Login from './pages/Login';
 import Trials from './pages/Trials';
 import About from './pages/About';
+import Homepage from './pages/Homepage';
+import Landingpage from './pages/Landingpage';
 
 import {AppBar, Button, Toolbar, Typography} from "@mui/material";
 
@@ -12,7 +14,7 @@ function App() {
     <div>
         <Navbar/>
         <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route path="/" element={<Landingpage/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/homepage" element={<Homepage/>}/>
@@ -23,19 +25,6 @@ function App() {
   );
 }
 
-const Homepage = () => {
-    return <div>
-        <h1>Homepage</h1>
-    </div>
-}
-
-
-
- const Home= () => {
-        return <div>
-            <h1>Home</h1>
-        </div>
- }
 
  const Navbar = () => {
     return (
