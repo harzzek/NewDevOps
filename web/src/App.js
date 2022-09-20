@@ -5,11 +5,12 @@ import Login from './pages/Login';
 import Trials from './pages/Trials';
 import About from './pages/About';
 
-import {AppBar, Button, Link, Toolbar, Typography} from "@mui/material";
+import {AppBar, Toolbar, Typography} from "@mui/material";
 
 function App() {
   return (
     <div>
+        <Navbar/>
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
@@ -21,20 +22,6 @@ function App() {
     </div>
   );
 }
-
-const Settings = () => {
-    return <div>
-        <h1>Settings</h1>
-    </div>
-}
-
-const Trials = () => {
-    return <div>
-        <h1>trials</h1>
-    </div>
-}
-
-
 
 const Homepage = () => {
     return <div>
@@ -49,5 +36,17 @@ const Homepage = () => {
             <h1>Home</h1>
         </div>
  }
+
+ const Navbar = () => {
+    return (
+    <AppBar position="static">
+        <Toolbar>
+            <Typography variant="h4">
+                Navbar
+            </Typography>
+        </Toolbar>
+    </AppBar>
+    )
+}
 
 export default App;
