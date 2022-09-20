@@ -1,5 +1,10 @@
 import './App.css';
 import {Routes, Route} from "react-router-dom";
+import Settings from './pages/Settings';
+import Login from './pages/Login';
+import Trials from './pages/Trials';
+import About from './pages/About';
+
 
 function App() {
   return (
@@ -16,17 +21,7 @@ function App() {
   );
 }
 
-const Settings = () => {
-    return <div>
-        <h1>Settings</h1>
-    </div>
-}
 
-const Trials = () => {
-    return <div>
-        <h1>trials</h1>
-    </div>
-}
 
 const Homepage = () => {
     return <div>
@@ -34,17 +29,7 @@ const Homepage = () => {
     </div>
 }
 
-const Login = () => {
-    return <div>
-        <h1>Login</h1>
-    </div>
-}
 
- const About = () => {
-     return <div>
-         <h1>Hi</h1>
-     </div>
- }
 
  const Home= () => {
         return <div>
