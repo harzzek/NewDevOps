@@ -1,4 +1,4 @@
-import {Button, Grid, TextField} from "@mui/material";
+import {Button, Grid, TextField, Typography} from "@mui/material";
 
 
 function Login() {
@@ -10,13 +10,16 @@ function Login() {
             direction="column"
             alignItems="center"
             justifyContent="center"
-            style={{ minHeight: '100vh' }}>
+            style={{ minHeight: '70vh' }}>
+            <Grid item>
+                <Typography variant={"h4"}>
+                    Login page
+                </Typography>
+            </Grid>
             <Grid item spacing={2}>
                 <TextField id="outlined-basic" label="Email" variant="outlined" />
             </Grid>
-            <Grid
-                item
-            >
+            <Grid item>
                 <TextField id="outlined-basic" label="Password" variant="outlined" />
             </Grid>
             <Grid item>
