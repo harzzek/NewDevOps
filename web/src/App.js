@@ -1,41 +1,47 @@
 import './App.css';
 import {Routes, Route} from "react-router-dom";
-import {AppBar, Toolbar, Typography} from "@mui/material";
+import Settings from './pages/Settings';
+import Login from './pages/Login';
+import Trials from './pages/Trials';
+import About from './pages/About';
+import Homepage from './pages/Homepage';
+import Landingpage from './pages/Landingpage';
+
+import {AppBar, Button, Toolbar, Typography} from "@mui/material";
 
 function App() {
   return (
     <div>
-        <Header/>
+        <Navbar/>
         <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route path="/" element={<Landingpage/>}/>
             <Route path="/about" element={<About/>}/>
+            <Route path="/login" element={<Login/>}/>
+            <Route path="/homepage" element={<Homepage/>}/>
+            <Route path="/trials" element={<Trials/>}/>
+            <Route path="/settings" element={<Settings/>}/>
         </Routes>
     </div>
   );
 }
 
- const About = () => {
-     return <div>
-         <h1>Hi</h1>
-     </div>
- }
 
- const Home= () => {
-        return <div>
-            <h1>Home</h1>
-        </div>
- }
-
- const Header = () => {
-     return (
-         <AppBar position="static">
-             <Toolbar>
-                 <Typography variant="h4">
-                     Navbar
-                 </Typography>
-             </Toolbar>
-         </AppBar>
-     )
+ const Navbar = () => {
+    return (
+    <AppBar position="static">
+        <Toolbar>
+            <Typography variant="h4">
+                <div>
+                    Home
+                </div>
+            </Typography>
+            <Button color="inherit" href={"#/about"}>About</Button>
+            <Button color="inherit" href={"#/login"}>Login</Button>
+            <Button color="inherit" href={"#/settings"}>Settings</Button>
+            <Button color="inherit" href={"#/trials"}>Trials</Button>
+        </Toolbar>
+    </AppBar>
+    )
 }
 
 export default App;
