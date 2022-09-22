@@ -6,6 +6,7 @@ import Trials from './pages/Trials';
 import About from './pages/About';
 import Homepage from './pages/Homepage';
 import Landingpage from './pages/Landingpage';
+import logo from './Logo/cropped-Final-Logo-2.png';
 
 import {AppBar, Button, Toolbar, Typography} from "@mui/material";
 
@@ -32,7 +33,10 @@ function App() {
         <Toolbar>
             <Typography variant="h4">
                 <div>
-                    Home
+                    <img
+                        src={logo} alt={"Logo"}
+                        height={50}
+                    />
                 </div>
             </Typography>
             <Button color="inherit" href={"#/about"}>About</Button>
@@ -43,5 +47,6 @@ function App() {
     </AppBar>
     )
 }
+
 
 export default App;
