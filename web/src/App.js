@@ -6,8 +6,9 @@ import Trials from './pages/Trials';
 import About from './pages/About';
 import Homepage from './pages/Homepage';
 import Landingpage from './pages/Landingpage';
+import logo from './Logo/cropped-Final-Logo-2.png';
 
-import {AppBar, Button, Toolbar, Typography} from "@mui/material";
+import {AppBar, Button, Toolbar} from "@mui/material";
 
 function App() {
   return (
@@ -30,11 +31,12 @@ function App() {
     return (
     <AppBar position="static">
         <Toolbar>
-            <Typography variant="h4">
-                <div>
-                    Home
-                </div>
-            </Typography>
+            <Button href={"/"}>
+                <img
+                    src={logo} alt={"Logo"}
+                    height={50}
+                />
+            </Button>
             <Button color="inherit" href={"#/about"}>About</Button>
             <Button color="inherit" href={"#/login"}>Login</Button>
             <Button color="inherit" href={"#/settings"}>Settings</Button>
@@ -43,5 +45,6 @@ function App() {
     </AppBar>
     )
 }
+
 
 export default App;
