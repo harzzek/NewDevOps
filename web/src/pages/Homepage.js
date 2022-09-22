@@ -22,7 +22,7 @@ function Homepage() {
                     </Typography>
                 </Grid>
                 <Grid>
-                    <Button href={"#/trials"}>
+                    <Button href={"#/trials"} variant={"contained"} sx={{paddingRight:7, paddingLeft:7, fontSize:20}}>
                         Trials
                     </Button>
                 </Grid>
@@ -32,7 +32,7 @@ function Homepage() {
                     </Typography>
                 </Grid>
                 <Grid>
-                    <Button href={"#/settings"}>
+                    <Button href={"#/settings"} variant={"outlined"} sx={{paddingRight:7, paddingLeft:7, fontSize:20}}>
                         Settings
                     </Button>
                 </Grid>
