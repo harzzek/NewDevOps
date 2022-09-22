@@ -31,14 +31,12 @@ function App() {
     return (
     <AppBar position="static">
         <Toolbar>
-            <Typography variant="h4">
-                <div>
-                    <img
-                        src={logo} alt={"Logo"}
-                        height={50}
-                    />
-                </div>
-            </Typography>
+            <Button href={"/"}>
+                <img
+                    src={logo} alt={"Logo"}
+                    height={50}
+                />
+            </Button>
             <Button color="inherit" href={"#/about"}>About</Button>
             <Button color="inherit" href={"#/login"}>Login</Button>
             <Button color="inherit" href={"#/settings"}>Settings</Button>
