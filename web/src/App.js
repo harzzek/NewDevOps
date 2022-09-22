@@ -8,7 +8,7 @@ import Homepage from './pages/Homepage';
 import Landingpage from './pages/Landingpage';
 import logo from './Logo/cropped-Final-Logo-2.png';
 
-import {AppBar, Button, Toolbar, Typography} from "@mui/material";
+import {AppBar, Button, Toolbar} from "@mui/material";
 
 function App() {
   return (
