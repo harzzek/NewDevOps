@@ -15,7 +15,7 @@ function App() {
     <div>
         <Navbar/>
         <Routes>
-            <Route path="/" element={<Landingpage/>}/>
+            <Route path="/FirstDevOps" element={<Landingpage/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/homepage" element={<Homepage/>}/>
@@ -31,7 +31,7 @@ function App() {
     return (
     <AppBar position="static">
         <Toolbar>
-            <Button href={"/"}>
+            <Button href={"/FirstDevOps"}>
                 <img
                     src={logo} alt={"Logo"}
                     height={50}
