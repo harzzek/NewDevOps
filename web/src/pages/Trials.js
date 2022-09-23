@@ -42,9 +42,10 @@ function Trials() {
                   spacing={4}
                   alignItems="center"
                   justifyContent="center"
-                  direction="row">
+                  direction="row"
+                  >
                 {trials.map(trial => (
-                    <Grid item xs={4}>
+                    <Grid item xs={4} sm={6} md={4} lg={4}>
                             <Card sx={6} >
                                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                                     Trial
