@@ -10,6 +10,7 @@ import logo from './Logo/cropped-Final-Logo-2.png';
 import {AppBar, Button, Toolbar} from "@mui/material";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
+import CreateTrial from "./pages/CreateTrial";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/about" element={<About/>}/>
             <Route path="/signin" element={<Signin/>}/>
             <Route path="/signup" element={<Signup/>}/>
+            <Route path="/createTrials" element={<CreateTrial/>}/>
             <Route path="/homepage" element={<Homepage/>}/>
             <Route path="/trials" element={<Trials/>}/>
             <Route path="/settings" element={<Settings/>}/>
