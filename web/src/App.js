@@ -11,6 +11,7 @@ import {AppBar, Button, Toolbar} from "@mui/material";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import CreateTrial from "./pages/CreateTrial";
+import TrialSignup from "./pages/TrialSignup";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/homepage" element={<Homepage/>}/>
             <Route path="/trials" element={<Trials/>}/>
             <Route path="/settings" element={<Settings/>}/>
+            <Route path="/trialSignup" element={<TrialSignup/>}/>
         </Routes>
     </div>
   );
