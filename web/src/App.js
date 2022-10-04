@@ -12,6 +12,8 @@ import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import CreateTrial from "./pages/CreateTrial";
 import TrialSignup from "./pages/TrialSignup";
+import GiraffeService from "./pages/GiraffeService";
+import {observer} from "mobx-react-lite";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
             <Route path="/trials" element={<Trials/>}/>
             <Route path="/settings" element={<Settings/>}/>
             <Route path="/trialSignup" element={<TrialSignup/>}/>
+            <Route path={"*"} element={<h1>404</h1>}/>
+            <Route path={"/giraffestore"} element={<GiraffeService/>}/>
         </Routes>
     </div>
   );
@@ -47,10 +51,12 @@ function App() {
             <Button color="inherit" size={"large"} href={"#/signin"}>Login</Button>
             <Button color="inherit" size={"large"} href={"#/settings"}>Settings</Button>
             <Button color="inherit" size={"large"} href={"#/trials"}>Trials</Button>
+            <Button color="inherit" size={"large"} href={"#/giraffestore"}>Store</Button>
+
         </Toolbar>
     </AppBar>
     )
 }
 
 
-export default App;
+export default observer(App);

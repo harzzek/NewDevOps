@@ -31,7 +31,7 @@ export default function Settings() {
 
     return (
         <ThemeProvider theme={theme}>
-            <Container component="main" maxWidth="xs">
+            <Container component="launch.Main" maxWidth="xs">
                 <CssBaseline />
 
                 <Box
