@@ -13,7 +13,7 @@ public class Main {
 
         tomcat.setPort(Integer.parseInt(port));
         tomcat.getConnector();
-        tomcat.addWebapp("",new File("src/launch.main/webapp").getAbsolutePath());
+        tomcat.addWebapp("",new File("src/main/webapp").getAbsolutePath());
 
         try {
             tomcat.start();
