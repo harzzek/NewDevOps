@@ -18,7 +18,7 @@
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-json-jackson</artifactId>
-            <version>3.0.6</version>
+            <version>3.0.8</version>
         </dependency>
         <!-- Embedded tomcat server -->
         <dependency>
@@ -36,13 +36,13 @@
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-servlet</artifactId>
-            <version>3.0.6</version>
+            <version>3.0.8</version>
         </dependency>
         <!-- Injection Manager -->
         <dependency>
             <groupId>org.glassfish.jersey.inject</groupId>
             <artifactId>jersey-hk2</artifactId>
-            <version>3.0.6</version>
+            <version>3.0.8</version>
         </dependency>
     </dependencies>
 
